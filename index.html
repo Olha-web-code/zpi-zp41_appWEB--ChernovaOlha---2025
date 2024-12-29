@@ -3,168 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Available Courses</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      height: 100vh;
-    }
-    nav {
-      width: 80px;
-      background-color: #4361EE;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 0;
-    }
-    .menu {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 90px;
-    }
-    .menu li {
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: white;
-      font-size: 14px;
-      font-weight: 400;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 5px;
-    }
-    nav a.selected {
-      color: #AF96F2;
-      font-weight: 700;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    nav svg {
-      width: 30px;
-      height: 30px;
-      fill: white;
-    }
-    nav a.selected svg {
-      fill: #AF96F2;
-    }
-    .bottom-text {
-      font-size: 14px;
-      font-weight: 400;
-    }
-    main {
-      flex: 1;
-      background-color: #E5EAF5;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-      color: #333;
-      font-weight: 700;
-    }
-    .tabs {
-      display: flex;
-      justify-content: center;
-      margin: 20px 0;
-    }
-    .tabs-list {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-      display: flex;
-    }
-    .tabs-list li {
-      margin: 0;
-      padding: 0;
-    }
-    .tab {
-      background-color: #E5EAF5;
-      border: 2px solid #999;
-      border-radius: 20px;
-      padding: 10px 20px;
-      margin: 0 10px;
-      cursor: pointer;
-      font-weight: 400;
-    }
-    .tab.selected {
-      background-color: #E9EDF9;
-      font-weight: 700;
-      color: #AF96F2;
-    }
-    .courses {
-      display: flex;
-      justify-content: center;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    .course-list{
-        gap: 20px;
-    }
-
-    .courses li {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-    }
-    .course-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      text-align: center;
-      padding: 10px;
-    }
-    .course-card img {
-      width: 100%;
-      border-radius: 10px 10px 0 0;
-    }
-    .course-card .details {
-      padding: 10px 0;
-    }
-    .course-card .details span {
-      display: block;
-      font-size: 14px;
-      color: #555;
-    }
-    .course-card .description {
-      font-size: 12px;
-      color: #777;
-      margin-top: 5px;
-    }
-    .submit-button {
-      display: block;
-      margin: 30px auto;
-      padding: 10px 20px;
-      background-color: #AF96F2;
-      color: white;
-      font-size: 16px;
-      font-weight: 700;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .submit-button:hover {
-      background-color: #9879D9;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css" /> 
+  <title>WOWDev</title>
 </head>
 <body>
   <nav>
@@ -183,38 +23,99 @@
     </ul>
     <p class="bottom-text">WD</p>
   </nav>
-  <main>
-    <h1>Available Courses</h1>
-    <section class="tabs">
-      <ul class="tabs-list">
-        <li><button class="tab selected">Python</button></li>
-        <li><button class="tab">JS</button></li>
-        <li><button class="tab">C#</button></li>
-      </ul>
-    </section>
-    <section class="courses">
-      <ul class="course-list">
-        <li class="course-card">
-          <img src="https://via.placeholder.com/200x120" alt="Course 1">
-          <div class="details">
-            <span><b>Full Python Course</b></span>
-            <span>20 videos</span>
-            <span>10 practical tasks</span>
-            <p class="description">Best Free Python Courses for beginners.</p>
-          </div>
-        </li>
-        <li class="course-card">
-          <img src="https://via.placeholder.com/200x120" alt="Course 2">
-          <div class="details">
-            <span><b>Full Python Course</b></span>
-            <span>10 videos</span>
-            <span>4 practical tasks</span>
-            <p class="description">Free Python Course for beginners.</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <button class="submit-button">Submit Course</button>
-  </main>
+  <div class="header-container"></div>
+  <div class="main-content-container">
+    <div class="content-wrapper">
+        <header>
+            <h1>
+                <span class="logo">
+                    <img alt="WOW" src="wow.png"/>
+                    <span>Dev</span>
+                </span>
+            </h1>
+        </header>
+        <main>
+            <h2 class="courses-heading">Available Courses</h2>
+            <section class="tabs">
+              <ul class="tabs-list">
+                <li><button class="tab selected">Python</button></li>
+                <li><button class="tab">JS</button></li>
+                <li><button class="tab">C#</button></li>
+              </ul>
+            </section>
+            <section class="courses">
+              <ul class="course-list">
+                <li class="course-card">
+                  <img src="python.png" alt="Course 1">
+                  <div class="details">
+                    <span><b>Full Python Course</b></span>
+                    <span>20 videos</span>
+                    <span>10 practical tasks</span>
+                    <p class="description">Best Free Python Courses for advanced programmers.</p>
+                  </div>
+                </li>
+                <li class="course-card">
+                  <img src="python1.png" alt="Course 2">
+                  <div class="details">
+                    <span><b>Full Python Course </b></span>
+                    <span>10 videos</span>
+                    <span>4 practical tasks</span>
+                    <p class="description">Free Python Course for beginners.</p>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <button class="submit-button">Submit Course</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Python Topics</th>
+                        <th>Estimated Time to Learn</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Variables and Data Types</td>
+                        <td>1-2 days</td>
+                    </tr>
+                    <tr>
+                        <td>Control Flow (if, loops)</td>
+                        <td>2-3 days</td>
+                    </tr>
+                    <tr>
+                        <td>Functions</td>
+                        <td>3-5 days</td>
+                    </tr>
+                    <tr>
+                        <td>Object-Oriented Programming</td>
+                        <td>1-2 weeks</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2 class="roadmap-heading">Python Roadmap to Becoming an Advanced Programmer</h2>
+            <ol class="roadmap-list">
+                <li>Master the Basics: Variables, Data Types, Loops, and Functions</li>
+                <li>Learn Advanced Topics: Decorators, Generators, and Context Managers</li>
+                <li>Dive into Frameworks: Work with Flask, Django, or FastAPI</li>
+                <li>Understand Data Science and Machine Learning Libraries: NumPy, Pandas, TensorFlow</li>
+                <li>Contribute to Open Source Projects and Build Advanced Applications</li>
+            </ol>
+            <p class="business-logic">Business logic of this website is</p><a href="business_logic.html">here</a>
+          </main>
+      </div>
+      <div class="footer-wrapper">
+        <footer>
+            <div class="footer-container">
+                <p>Stay updated with the latest courses and updates from WOWDev!</p>
+                <form class="contact-form">
+                  <label for="email">If you want to get special updates, please enter your email:</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  <button type="submit" class="subscribe-button">Subscribe</button>
+                </form>
+                <p>&copy; 2024 WOWDev. All rights reserved.</p>
+              </div>
+          </footer>
+      </div>
+  </div>
 </body>
 </html>
