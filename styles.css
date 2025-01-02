@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-    
-    body {
+   body {
       display: flex;
       flex-direction: row;
       font-family: 'Roboto', Arial, sans-serif;
@@ -123,7 +120,7 @@
       margin: 0;
       display: flex;
     }
-    .tabs-list li {
+    .tabs-list > li {
       margin: 0;
       padding: 0;
     }
@@ -209,7 +206,7 @@
         margin-left: 100px;
     }
 
-    .courses-heading{
+    #courses-heading{
         margin: 0 auto;
     }
 
