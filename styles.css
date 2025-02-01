@@ -227,7 +227,6 @@ body {
     margin: 20px auto;
     font-family: Arial, sans-serif;
     justify-content: center;
-    margin-left: 50px;
   }
   
   th, td {
@@ -386,6 +385,7 @@ body {
     table {
       width: 90%;
       font-size: 12px;
+      margin-left: 40px;
     }
   
     .footer-container {
