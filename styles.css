@@ -226,6 +226,8 @@ body {
     border-collapse: collapse;
     margin: 20px auto;
     font-family: Arial, sans-serif;
+    justify-content: center;
+    margin-left: 50px;
   }
   
   th, td {
@@ -240,13 +242,16 @@ body {
   
   .roadmap-heading {
     margin-bottom: 20px;
+    align-self: center;
   }
   
   .roadmap-list {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     gap: 10px;
+    margin-left: 50px;
     margin-bottom: 20px;
   }
   
@@ -281,9 +286,6 @@ body {
   }
   
   .subscribe-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
     background-color: #AF96F2;
     color: white;
     font-size: 16px;
@@ -292,10 +294,19 @@ body {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 0 auto;
   }
   
   .subscribe-button:hover {
     background-color: #9879D9;
+  }
+
+  .subscribe-input{
+    width:150px;
+    margin: 0 auto;
   }
   
   .main-content-container {
@@ -345,7 +356,7 @@ body {
   /* Mobile adjustments */
   @media (max-width: 767px) {
     nav {
-      width: 50px;
+      width: 40px;
       padding: 10px 0;
     }
   
@@ -382,8 +393,5 @@ body {
       font-size: 12px;
     }
   
-    .subscribe-button {
-      width: 100%;
-    }
   }
   
